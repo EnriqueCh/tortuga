@@ -152,9 +152,6 @@ nav li{
 		display: block;
 	}
 
-	.header {
-		background-color: blue;
-	}
 }
 
 
@@ -234,6 +231,31 @@ nav li{
 	color: white;
 }
 
+@media only screen and (max-width: 560px){
+	.info-container{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.info{
+		width: 100%;
+
+	}
+
+	.info p{
+		font-size: 0.77rem;
+	}
+
+	.title{
+		text-align: center;
+		width: 100%;
+	}
+
+	.dima{
+		padding-top: 4rem;
+	}
+
+}
 
 
 /*footer*/
@@ -241,7 +263,7 @@ nav li{
 footer{
 	display: flex;
 	align-items: center;
-	background-color: cadetblue; /*changed color for visi*/
+	background-color: azure; /*changed color for visi*/
 	padding: 4rem 2rem;
 	position: relative;
 	top:5rem;
@@ -251,4 +273,16 @@ footer img{
 	height: 1.5rem;
 	margin-right: 1rem;
 	margin-left: 2rem;
+}
+
+@media only screen and (max-width:560px){
+
+	footer{
+		justify-content: center;
+	}
+
+
+	footer span{
+		display: none;
+	}
 }
